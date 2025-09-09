@@ -37,7 +37,7 @@ function App() {
       {!showCard ? (
         // Show only countdown before birthday
         <Countdown
-          targetDate={new Date("2025-09-10T01:24:30")}
+          targetDate={new Date("2025-09-15T01:24:30")}
           onComplete={() => setShowCard(true)}
         />
       ) : (
