@@ -1,0 +1,74 @@
+.about-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9a8d4, #fbc2eb, #a18cd1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+  position: relative;
+  text-align: center;
+}
+
+/* Profile Photo */
+.about-photo img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1px;
+}
+
+/* Meme GIFs */
+.about-memes {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+
+.meme {
+  width: 120px;
+  border-radius: 15px;
+  position: absolute;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  animation: float 3s ease-in-out infinite;
+}
+
+.meme.left {
+  left: 20px;
+}
+
+.meme.right {
+  right: 20px;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* About Text */
+.about-text {
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 25px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  margin-top: 20px;
+}
+
+.about-text h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color: #ff4b5c;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+}
